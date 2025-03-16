@@ -28,3 +28,5 @@ Technologies Used
 Frontend → React
 Backend → Node.js (Express)
 Database → MongoDB
+
+(travel idea: Andreea; festial idea: Cristina)
