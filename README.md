@@ -29,4 +29,4 @@ Frontend → React
 Backend → Node.js (Express)
 Database → MongoDB
 
-(travel idea: Andreea; festial idea: Cristina)
+(travel idea: Andreea; festival idea: Cristina)
