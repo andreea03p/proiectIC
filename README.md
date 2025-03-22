@@ -1,32 +1,44 @@
-Find Your Travel/Festival Buddy
+SkillSwap: Platformă de schimb de competențe
 
-
-Problem Solving
-
-Traveling or attending festivals alone can be challenging. This app connects users with like-minded companions based on their personality type, interests,
-schedule type, budget, and destination preferences.
-
+#Prezentare generală
+SkillSwap este o platformă care facilitează schimbul de competențe între utilizatori, bazată pe un sistem de "ore".
+Utilizatorii pot preda domeniile în care sunt experți pentru a câștiga ore și apoi pot cheltui aceste ore pentru a învăța
+alte competențe de la alți utilizatori.
 
 MVP
 
-User Authentication: Sign up, create profiles, and save preferences.
-Profile Matching: Find travel or festival buddies in Timisoara based on shared interests.
-Chat & Messaging: Secure communication (also based on reviews) before making plans.
+1. Autentificare securizată
+   - Sistem de înregistrare și autentificare
+   - Verificare a identității prin scanare document pentru prevenirea conturilor multiple
+
+2. Profiluri utilizator
+   - Configurarea skill-urilor oferite și dorite
+   - Setarea locației
+
+3. Sistem de contabilizare a orelor
+   - Ore gratuite la înregistrare
+   - Monitorizare orelor câștigate și cheltuite
+
+4. Descoperire și conectare
+   - Hartă interactivă pentru vizualizarea utilizatorilor din apropiere
+   - Sistem de căutare cu filtre (competențe, rating)
+
+5. Ratings și feedback
+   - Sistem de rating pentru utilizatori
+   - Posibilitatea de a lăsa recenzii detaliate
 
 
-Additional Features
+Tehnologii utilizate:
+- Frontend: React.js
+- Backend: Node.js cu Express.js
+- Bază de date: MongoDB pentru stocare principală
+- Autentificare: Firebase Authentication
+- Hartă interactivă: Google Maps API
+- Payments: Stripe
 
-Verified Profiles (cazier) & Reviews for safety.
-Trip & Festival Planning to organize itineraries.
-Group Matching for shared experiences.
-Budget & Accommodation Filters for better compatibility.
-Event & Destination Suggestions based on interests.
 
+Additional features
 
-Technologies Used
-
-Frontend → React
-Backend → Node.js (Express)
-Database → MongoDB
-
-(travel idea: Andreea; festival idea: Cristina)
+Sistem de abonament premium + integrare plăți
+   - Acces la cursuri înregistrate
+   - Ore bonus lunare
