@@ -1,22 +1,35 @@
-import React from 'react'; 
 import { useState } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import Navbar from '../src/components/Navbar.jsx';
+import Home from './pages/Home';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
+import axios from 'axios';
+import { Toaster } from 'react-hot-toast'
+import ResetPassword from './pages/ResetPassword.jsx';
 
-import Home from "./pages/HomePage/HomePage";
-import SignIn from "./components/SignIn/Login";
-import SignUp from "./components/SignUp/Signup";
+axios.defaults.baseURL = 'http://localhost:5050'
+axios.defaults.withCredentials = true
 
 function App() {
+
   return (
-    <Router>
+    <>
+      {/* <Navbar /> */}
+      <Toaster position ='bottom-right' toastOptions={{duration: 2000}} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/reset-pass" element={<ResetPassword />} />
       </Routes>
-    </Router>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
