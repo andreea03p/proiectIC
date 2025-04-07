@@ -26,7 +26,7 @@ export default function Login() {
           email: "",
           password: "",
         });
-        navigate("/");
+        navigate("/profile");
       }
     } catch (error) {
       console.error(error);

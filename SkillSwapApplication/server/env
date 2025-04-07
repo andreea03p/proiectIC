@@ -1,0 +1,3 @@
+MONGO_URI = mongodb+srv://cristinapetea23:PinkTrees7@proiectic.9fdoskl.mongodb.net/?retryWrites=true&w=majority&appName=ProiectIC
+
+PORT=5000

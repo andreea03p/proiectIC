@@ -3,6 +3,9 @@ const router = express.Router();
 const cors = require('cors');
 const { test, registerUser, loginUser, resetPassword } = require('../controllers/authController');
 
+module.exports = router;
+
+
 // Updated CORS middleware
 router.use(
     cors({

@@ -1,0 +1,196 @@
+/*
+.profile-page {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding-top: 1rem;
+    background: url('../assets/bckg1.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #f2f2f2;
+  }
+  
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+  }
+  
+  .profile-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+  }
+  
+  .profile-name {
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-email {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .upload-input {
+    margin-top: 1rem;
+  }
+  
+  */
+
+  /* General Styles */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+/* Profile Page Container */
+.profile-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Profile Picture Container */
+.profile-pic-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #ddd; /* Default background if no image */
+}
+
+.profile-pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Default Profile Avatar Text (when no image is set) */
+.user-default-profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #6c757d;
+  width: 100%;
+  height: 100%;
+}
+
+/* Profile Info Container */
+.profile-info-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+/* Profile Info Text */
+.user-profile-name h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.profile-info-container div {
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+/* Profile Edit Section */
+.edit-profile-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.edit-profile-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.edit-profile-container label {
+  display: block;
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+.edit-profile-container input,
+.edit-profile-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+}
+
+.edit-profile-container button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Input focus styles */
+.edit-profile-container input:focus,
+.edit-profile-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* File input for profile picture */
+.select-profile-pic-container input[type="file"] {
+  margin-top: 10px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}

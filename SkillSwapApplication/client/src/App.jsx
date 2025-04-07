@@ -11,22 +11,29 @@ import Profile from './pages/Profile';
 import axios from 'axios';
 import { Toaster } from 'react-hot-toast'
 import ResetPassword from './pages/ResetPassword.jsx';
+import Notifications from './pages/Notifications.jsx';
+import { BrowserRouter as Router } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 
 axios.defaults.baseURL = 'http://localhost:5050'
 axios.defaults.withCredentials = true
 
 function App() {
+  const location = useLocation();
+  const showNavbar = location.pathname === './pages/Profile';
 
   return (
     <>
-      {/* <Navbar /> */}
-      <Toaster position ='bottom-right' toastOptions={{duration: 2000}} />
+       {showNavbar && <Navbar />}
+       <Toaster position ='bottom-right' toastOptions={{duration: 2000}} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/reset-pass" element={<ResetPassword />} />
+        <Route path="/notifications" element={<Notifications />} />
       </Routes>
     </>
   )

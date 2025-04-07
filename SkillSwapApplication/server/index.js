@@ -5,6 +5,10 @@ const {mongoose} = require('mongoose')
 const cookieParser = require('cookie-parser')
 const app = express();
 
+//Profile
+const profileRoutes = require('./routes/profileRoutes');
+app.use('/', profileRoutes);
+
 
 // db connection
 mongoose.connect(process.env.MONGO_URL)
@@ -33,3 +37,5 @@ app.use(cors({
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
+
+  
